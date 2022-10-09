@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="inage/png" href="images/febicon.png" sizes="16x16">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4e6c12451b.js" crossorigin="anonymous"></script>
+    <title>TransForm</title>
+    <style>
+        .fa-house {
+            font-size: 15px;
+            color: aqua;
+        }
+
+        .fa-star {
+            font-size: 15px;
+            color: gold;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            width: 150px;
+            height: 150px;
+        }
+
+
+        .container {
+
+            background-color: rgb(207, 240, 240);
+            border: 2px solid rgb(11, 236, 11);
+        }
+
+        .flash {
+            width: 150px;
+            height: 150px;
+            background-color: none;
+
+        }
+
+        .flash:hover {
+            transform: scale(.5) rotate(45deg);
+            transition-duration: 2s;
+            background-color: lightcoral;
+
+        }
+
+
+
+        .inner {
+            width: 150px;
+            height: 150px;
+            background-color: lightcoral;
+
+        }
+    </style>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href=""> <i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="">Galary</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href=""> <i class="fa-solid fa-star"></i> Service</a>
+                <ul>
+                    <li><a href="">link-1</a></li>
+                    <li><a href="">link-2</a></li>
+                    <li><a href="">link-3</a></li>
+                    <li><a href="">link-4</a></li>
+                </ul>
+            </li>
+            <li><a href="">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h1>This is my TransForm Page</h1>
+
+
+<body>
+    <div class="box container">
+        <div class="flash">Box-1</div>
+    </div>
+    <div class="box container">
+        <div class="inner">Box-2</div>
+    </div>
+    <div class="box container">
+        <div class="inner">Box-3</div>
+    </div>
+</body>
+
+</html>
