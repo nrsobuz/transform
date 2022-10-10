@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/4e6c12451b.js" crossorigin="anonymous"></script>
-    <title>TransForm</title>
+    <title>TransForm and transition</title>
     <style>
         .fa-house {
             font-size: 15px;
@@ -28,25 +28,23 @@
         .container {
             width: 150px;
             height: 150px;
-        }
-
-
-        .container {
-
             background-color: rgb(207, 240, 240);
             border: 2px solid rgb(11, 236, 11);
+
+
         }
 
-        .flash {
+
+        .rotate {
             width: 150px;
             height: 150px;
             background-color: none;
 
         }
 
-        .flash:hover {
+        .rotate:hover {
             transform: scale(.5) rotate(360deg);
-            transition-duration: 3s;
+            transition: 3s linear;
             background-color: lightcoral;
 
         }
@@ -57,7 +55,12 @@
             width: 150px;
             height: 150px;
             background-color: lightcoral;
+            transition: width 5s linear, transform 5s;
+        }
 
+        .inner:hover {
+            width: 300px;
+            transform: rotate(360deg);
         }
     </style>
 </head>
@@ -85,10 +88,10 @@
 
 <body>
     <div class="box container">
-        <div class="flash">Box-1</div>
+        <div class="rotate">Box-1</div>
     </div>
     <div class="box container">
-        <div class="inner">Box-2</div>
+        <div class="inner ">Box-2</div>
     </div>
     <div class="box container">
         <div class="inner">Box-3</div>
